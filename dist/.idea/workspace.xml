@@ -4,10 +4,6 @@
     <list default="true" id="d6ab0c25-c73f-4a6f-9261-81f6a089b5bd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start screen design/Rocketchat start screen.ai" beforeDir="false" afterPath="$PROJECT_DIR$/../start screen design/Rocketchat start screen.ai" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start screen design/elements/Desktop/page 2 phone and pc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../start screen design/elements/Desktop/page 2 phone and pc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start screen design/elements/Desktop/page 3 phone and pc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../start screen design/elements/Desktop/page 3 phone and pc.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../start screen design/elements/Desktop/page 4 phone and pc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../start screen design/elements/Desktop/page 4 phone and pc.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,8 @@
       <updated>1585917580556</updated>
       <workItem from="1585917583926" duration="797000" />
       <workItem from="1586181069505" duration="670000" />
-      <workItem from="1586182740666" duration="14000" />
+      <workItem from="1586182740666" duration="332000" />
+      <workItem from="1586187871674" duration="17000" />
     </task>
     <servers />
   </component>
