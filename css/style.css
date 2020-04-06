@@ -37,15 +37,15 @@ body {
     border-radius: 10px;
     
 }
-/*#phone-container {
+#phone-container {
     min-width: 200px;
     max-width: 200px;
     max-height: 600px;
     width: 100%;
     height: 95vh;
-    background: #FFF;
+    background: black;
     border-radius: 10px;
-}*/
+}
 
 #search-container,
 #conversation-list,
@@ -213,7 +213,7 @@ body {
     width: 300px;
     background: rgb(197, 33, 33);
     border: 2px solid rgba(33, 68, 72, 0.59);
-    color: #eee;
+    color: #fff;
     text-align: center;
     font: bold 7em/80px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
