@@ -78,7 +78,18 @@ body {
 #conversation-list {
     grid-area: conversation-list;
 }
-
+.group {
+    display: grid;
+    grid-template-columns: 30px 1fr max-content;
+    color: #eee;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgb(0, 16, 36);
+    padding: 0 10px 30px;
+}
+.group > img {
+    height: 30px;
+    border-radius: 10%;
+}
 #new-message-container {
     display: grid;
     grid: 35px / 20px;
@@ -120,7 +131,18 @@ body {
 #chat-message-list {
     grid-area: chat-message-list;
 }
-
+.conversation {
+    display: grid;
+    grid-template-columns: 30px 1fr max-content;
+    color: #eee;
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgb(0, 16, 36);
+    padding: 0 10px 10px;
+}
+.conversation > img {
+    height: 30px;
+    border-radius: 10%;
+}
 #chat-form {
     display: grid;
     grid: 51px / 20px 1fr;
