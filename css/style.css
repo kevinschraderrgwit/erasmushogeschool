@@ -10,10 +10,14 @@ html,body {
 
 html {
     font-family: Arial, Helvetica, sans-serif;
-    background: whitesmoke;
+    background: #eee;
     font-size: 10px;
 }
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 
+}
 body {
     display: grid;
     place-items: center;
@@ -52,7 +56,7 @@ body {
 #search-container {
     display: grid;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     grid-area: search-container;
     box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
     z-index: 1;
@@ -80,15 +84,31 @@ body {
 }
 .group {
     display: grid;
-    grid-template-columns: 30px 1fr max-content;
+    grid-template-columns: 35px 1fr max-content;
     color: #eee;
     font-size: 1.3rem;
-    border-bottom: 1px solid rgb(0, 16, 36);
-    padding: 0 10px 30px;
+    padding: 10px 10px 20px;
 }
 .group > img {
     height: 30px;
     border-radius: 10%;
+}
+.title-text {
+    font-weight: bold;
+    color: #eee;
+}
+.title-text {
+    font-weight: bold;
+    color: #eee;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.group-message {
+    grid-column: 2;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 #new-message-container {
     display: grid;
@@ -103,7 +123,7 @@ body {
     display: grid;
     place-content: center center;
     border-radius: 100%;
-    color: green;
+    color: #eee;
     text-decoration: none;
     font-size: 3.6rem;
 }
@@ -134,14 +154,38 @@ body {
 .conversation {
     display: grid;
     grid-template-columns: 30px 1fr max-content;
-    color: #eee;
+    grid-gap: 10px;
+    color: #000;
     font-size: 1.3rem;
-    border-bottom: 1px solid rgb(0, 16, 36);
-    padding: 0 10px 10px;
+    padding: 10px 10px 10px;
+}
+.conversation.active,
+.conversation:hover {
+    background: #eee;
 }
 .conversation > img {
+    grid-row: span 2;
     height: 30px;
     border-radius: 10%;
+}
+.title-name {
+    font-weight: bold;
+    color: #000;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.created-date {
+    color: #000;
+    font-size: 1rem;
+}
+.conversation-message {
+    grid-column: span 2;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 #chat-form {
     display: grid;
@@ -162,5 +206,15 @@ body {
     color: #330;
     border-radius: 6px;
     font-size: 1.4rem;
+}
+.btn {
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: rgb(197, 33, 33);
+    border: 2px solid rgba(33, 68, 72, 0.59);
+    color: #eee;
+    text-align: center;
+    font: bold 7em/80px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
