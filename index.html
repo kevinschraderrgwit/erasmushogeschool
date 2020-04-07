@@ -3,128 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Erasmus X Rocket.chat</title>
 </head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eee;
+    font-size: 10px;
+}
+.h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+
+}
+body {
+    display: grid;
+    place-items: center;
+}
+
+#laptop-container {
+    display: grid;
+    grid: 'search-container chat-title' 71px
+    'conversation-list chat-message-list' 1fr
+    'new-message-container chat-form' 70px
+    / 200px 1fr;
+    min-width: 600px;
+    max-width: 800px;
+    max-height: 600px;
+    width: 70%;
+    height: 100vh;
+    background: #FFF;
+    border-radius: 10px;
+    padding: 10px 80px 10px 10px;
+    
+}
+#phone-container {
+    min-width: 100px;
+    max-width: 200px;
+    max-height: 500px;
+    width: 100%;
+    height: 50vh;
+    background: black;
+    border-radius: 10px;
+    position: relative;
+    top: 150px;
+    
+}
+
+#search-container,
+#conversation-list,
+#new-message-container {
+    background: rgb(0, 16, 36);
+}
+
+#search-container {
+    display: grid;
+    align-items: center;
+    padding: 0 0 0 20px;
+    grid-area: search-container;
+    box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+#search-container input{
+    color: #eee;
+    outline: none;
+    font-weight: bold;
+    border-radius: 2px;
+    height: 30px;
+    border: 0;
+    padding-left: 48px;
+    padding-right: 20px;
+    font-size: 1.4rem;
+    background: url('../images/search/search.svg') no-repeat rgba(255,255,255,0);
+    background-position: 15px center;
+    background-size: 20px 20px;
+}
+#search-container input::placeholder {
+    color: #fff;
+    font-weight: bold;
+}
+#conversation-list {
+    grid-area: conversation-list;
+}
+.group {
+    display: grid;
+    grid-template-columns: 35px 1fr max-content;
+    color: #eee;
+    font-size: 1.3rem;
+    padding: 10px 10px 20px;
+}
+.group > img {
+    height: 30px;
+    border-radius: 10%;
+}
+.title-text {
+    font-weight: bold;
+    color: #eee;
+}
+.title-text {
+    font-weight: bold;
+    color: #eee;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.group-message {
+    grid-column: 2;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+#new-message-container {
+    display: grid;
+    grid: 35px / 20px;
+    align-content: center;
+    grid-area: new-message-container;
+    border-top: 1px solid rgba(0,0,0,0.25);
+    border-radius: 0 0 0 10px;
+    padding: 0 15px;
+}
+#new-message-container a {
+    display: grid;
+    place-content: center center;
+    border-radius: 100%;
+    color: #eee;
+    text-decoration: none;
+    font-size: 3.6rem;
+}
+
+
+#chat-title,
+#chat-form {
+    background: #fff;
+}
+
+#chat-title {
+    display: grid;
+    grid: 36px /1fr 36px;
+    align-content: center;
+    align-items: center;
+    grid-area: chat-title;
+    color: rgb(0, 16, 36);
+    font-weight: bold;
+    font-size: 2.0rem;
+    border-radius: 0 10px 0 0;
+    box-shadow: 0 1px 3px -1px rgba(0,0,0,0.75);
+    padding: 0 10px;
+}
+
+#chat-message-list {
+    grid-area: chat-message-list;
+}
+.conversation {
+    display: grid;
+    grid-template-columns: 30px 1fr max-content;
+    grid-gap: 10px;
+    color: #000;
+    font-size: 1.3rem;
+    padding: 10px 10px 10px;
+}
+.conversation.active,
+.conversation:hover {
+    background: #eee;
+}
+.conversation > img {
+    grid-row: span 2;
+    height: 30px;
+    border-radius: 10%;
+}
+.title-name {
+    font-weight: bold;
+    color: #000;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.created-date {
+    color: #000;
+    font-size: 1rem;
+}
+.conversation-message {
+    grid-column: span 2;
+    padding-left: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+#chat-form {
+    display: grid;
+    grid: 51px / 20px 1fr;
+    align-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    grid-area: chat-form;
+    border-radius: 0 0 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.25);
+    padding-left: 20px;
+    padding-right: 10px;
+}
+#chat-form input {
+    outline: none;
+    padding: 15px;
+    border: 2px solid #ddd;
+    color: #330;
+    border-radius: 6px;
+    font-size: 1.4rem;
+}
+.btn {
+    display: block;
+    height: 100px;
+    width: 300px;
+    background: rgb(197, 33, 33);
+    border: 2px solid rgba(33, 68, 72, 0.59);
+    color: #fff;
+    text-align: center;
+    font: bold 7em/80px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+</style>
+
+
+
+
+
+
+
+
 <header>
     <h1>EASY TO USE APPS ON MOBILE AND DESKTOP</h1>
 </header>
 <body>
-        <div id="laptop-container">
-            <div id="search-container">
-                <input type="text" placeholder="Search" />
+    <div class="container">
+        <div class="row">
+            <div class="col-9" id="laptop-container">
+                    <div id="search-container">
+                        <input type="text" placeholder="Search" />
+                    </div>
+                    <div id="conversation-list">
+                    <div class="group">
+                        <img src="images/icons/team.svg" alt="Team"/>
+                        <div class="title-text">
+                            General
+                        </div>
+                        <div class="group-message">
+                            Guys this is awesome!
+                        </div>
+                    </div>
+                    <div class="group">
+                        <img src="images/icons/calendar.svg" alt="Calendar"/>
+                        <div class="title-text">
+                            Calendar
+                        </div>
+                        <div class="group-message">
+                            2 event today
+                        </div>
+                    </div>
+                    <div class="group">
+                        <img src="images/icons/design.svg" alt="Design"/>
+                        <div class="title-text">
+                            Designuiux
+                        </div>
+                        <div class="group-message">
+                            Can you help me for something?
+                        </div>
+                    </div>
+                    <div class="group">
+                        <img src="images/icons/coding.svg" alt="Coding"/>
+                        <div class="title-text">
+                            Coding
+                        </div>
+                        <div class="group-message">
+                            Hard coding today!
+                        </div>
+                    </div>
+                    </div>
+                    <div id="new-message-container">
+                        <a href="#">+</a>
+                    </div>
+                    <div id="chat-title">
+                        <span>#Designuiux</span>
+                    </div>
+                    <div id="chat-message-list">
+                    <div class="conversation">
+                        <img src="images/icons/profilman.svg" alt="Jan"/>
+                        <div class="title-name">
+                            Jan
+                        </div>
+                        <div class="created-date">
+                            Apr 6
+                        </div>
+                        <div class="conversation-message">
+                            Hallo
+                        </div>
+                    </div>
+                    <div class="conversation">
+                        <img src="images/icons/profilman2.svg" alt="Kevin"/>
+                        <div class="title-name">
+                            Kevin
+                        </div>
+                        <div class="created-date">
+                            Apr 6
+                        </div>
+                        <div class="conversation-message">
+                            Hey!
+                        </div>
+                    </div>
+                    <div class="conversation">
+                        <img src="images/icons/profilman.svg" alt="Ruvenss"/>
+                        <div class="title-name">
+                            Ruvenss
+                        </div>
+                        <div class="created-date">
+                            Apr 6
+                        </div>
+                        <div class="conversation-message">
+                            Good morning!
+                        </div>
+                    </div>
+                    <div class="conversation">
+                        <img src="images/icons/profilwoman.svg" alt="women2"/>
+                        <div class="title-name">
+                            Mia
+                        </div>
+                        <div class="created-date">
+                            Apr 6
+                        </div>
+                        <div class="conversation-message">
+                            Hello
+                        </div>
+                    </div>
+                    </div>
+                    <div id="chat-form">
+                        <img src="images/icons/emoji.svg" alt="Add emoji" />
+                        <input type="text" placeholder="type a message"/>
+                    </div>
             </div>
-            <div id="conversation-list">
-                <div class="group">
-                    <img src="images/icons/team.svg" alt="Team"/>
-                    <div class="title-text">
-                        General
+
+
+
+
+            <div class="col-3" id="phone-container">
+                    <div id="search-container">
+                        <input type="text" placeholder="Search" />
                     </div>
-                    <div class="group-message">
-                        Guys this is awesome!
+                    <div id="conversation-list">
+
                     </div>
-                </div>
-                <div class="group">
-                    <img src="images/icons/calendar.svg" alt="Calendar"/>
-                    <div class="title-text">
-                        Calendar
+                    <div id="new-message-container">
+
                     </div>
-                    <div class="group-message">
-                        2 event today
-                    </div>
-                </div>
-                <div class="group">
-                    <img src="images/icons/design.svg" alt="Design"/>
-                    <div class="title-text">
-                        Designuiux
-                    </div>
-                    <div class="group-message">
-                        Can you help me for something?
-                    </div>
-                </div>
-                <div class="group">
-                    <img src="images/icons/coding.svg" alt="Coding"/>
-                    <div class="title-text">
-                        Coding
-                    </div>
-                    <div class="group-message">
-                        Hard coding today!
-                    </div>
-                </div>
-            </div>
-            <div id="new-message-container">
-                <a href="#">+</a>
-            </div>
-            <div id="chat-title">
-                <span>#Designuiux</span>
-            </div>
-            <div id="chat-message-list">
-                <div class="conversation">
-                    <img src="images/icons/profilman.svg" alt="Jan"/>
-                    <div class="title-name">
-                        Jan
-                    </div>
-                    <div class="created-date">
-                        Apr 6
-                    </div>
-                    <div class="conversation-message">
-                        Hallo
-                    </div>
-                </div>
-                <div class="conversation">
-                    <img src="images/icons/profilman2.svg" alt="Kevin"/>
-                    <div class="title-name">
-                        Kevin
-                    </div>
-                    <div class="created-date">
-                        Apr 6
-                    </div>
-                    <div class="conversation-message">
-                        Hey!
-                    </div>
-                </div>
-                <div class="conversation">
-                    <img src="images/icons/profilman.svg" alt="Ruvenss"/>
-                    <div class="title-name">
-                        Ruvenss
-                    </div>
-                    <div class="created-date">
-                        Apr 6
-                    </div>
-                    <div class="conversation-message">
-                        Good morning!
-                    </div>
-                </div>
-                <div class="conversation">
-                    <img src="images/icons/profilwoman.svg" alt="women2"/>
-                    <div class="title-name">
-                        Mia
-                    </div>
-                    <div class="created-date">
-                        Apr 6
-                    </div>
-                    <div class="conversation-message">
-                        Hello
-                    </div>
-                </div>
-            </div>
-            <div id="chat-form">
-                <img src="images/icons/emoji.svg" alt="Add emoji" />
-                <input type="text" placeholder="type a message"/>
             </div>
         </div>
-        <div id="phone-container">
-            <div id="search-container">
-                <input type="text" placeholder="Search" />
-            </div>
-            <div id="conversation-list">
-
-            </div>
-            <div id="new-message-container">
-
-            </div>
-        </div>
+    </div>
 </body>
 <footer>
     <button type="button" class="btn btn-danger btn-lg">NEXT</button>
