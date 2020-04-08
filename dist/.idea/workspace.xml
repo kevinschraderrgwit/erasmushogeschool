@@ -13,18 +13,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectId" id="1a1ypukvTkDBw8ZvbDejIsnJPg7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -55,7 +47,11 @@
       <workItem from="1586182740666" duration="332000" />
       <workItem from="1586187871674" duration="17000" />
       <workItem from="1586241464892" duration="5445000" />
-      <workItem from="1586266253399" duration="546000" />
+      <workItem from="1586266253399" duration="794000" />
+      <workItem from="1586268303378" duration="207000" />
+      <workItem from="1586268548841" duration="163000" />
+      <workItem from="1586327744711" duration="1932000" />
+      <workItem from="1586334075087" duration="484000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1586262412174</created>
@@ -75,7 +71,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
@@ -83,14 +79,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="added logo's" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="648" y="329" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586268451853">
+      <screen x="0" y="23" width="1920" height="1139" />
+    </state>
+    <state x="648" y="329" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1920.23.1920.1057/0.23.1920.1139@0.23.1920.1139" timestamp="1586268451853" />
     <state x="402" y="23" width="1115" height="1139" key="CommitChangelistDialog2" timestamp="1586265511210">
       <screen x="0" y="23" width="1920" height="1139" />
     </state>
     <state x="402" y="23" width="1115" height="1139" key="CommitChangelistDialog2/0.23.1920.1139@0.23.1920.1139" timestamp="1586265511210" />
-    <state x="353" y="144" key="SettingsEditor" timestamp="1586259664190">
+    <state x="353" y="144" key="SettingsEditor" timestamp="1586267827675">
       <screen x="0" y="23" width="1920" height="1139" />
     </state>
     <state x="353" y="144" key="SettingsEditor/0.23.1920.1139@0.23.1920.1139" timestamp="1586259664190" />
+    <state x="353" y="144" key="SettingsEditor/1920.23.1920.1057/0.23.1920.1139@0.23.1920.1139" timestamp="1586267827675" />
     <state x="460" y="264" key="Vcs.Push.Dialog.v2" timestamp="1586262416373">
       <screen x="0" y="23" width="1920" height="1139" />
     </state>
