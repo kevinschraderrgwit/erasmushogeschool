@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d6ab0c25-c73f-4a6f-9261-81f6a089b5bd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dist/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../start screen design/elements/Mobile/Page 2 phone and desktop mobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../start screen design/elements/Mobile/Page 2 phone and desktop mobile.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
       <workItem from="1586327744711" duration="1932000" />
       <workItem from="1586334075087" duration="8414000" />
       <workItem from="1586419039372" duration="1495000" />
-      <workItem from="1586433771796" duration="159000" />
+      <workItem from="1586433771796" duration="4892000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1586262412174</created>
@@ -100,9 +100,10 @@
       <screen x="0" y="23" width="1920" height="1139" />
     </state>
     <state x="460" y="264" key="Vcs.Push.Dialog.v2/0.23.1920.1139@0.23.1920.1139" timestamp="1586262416373" />
-    <state x="541" y="130" width="838" height="1032" key="search.everywhere.popup" timestamp="1586354683405">
+    <state x="541" y="130" width="838" height="1032" key="search.everywhere.popup" timestamp="1586437921004">
       <screen x="0" y="23" width="1920" height="1139" />
     </state>
     <state x="541" y="130" width="838" height="1032" key="search.everywhere.popup/0.23.1920.1139@0.23.1920.1139" timestamp="1586354683405" />
+    <state x="541" y="130" width="838" height="1032" key="search.everywhere.popup/1920.23.1920.1057/0.23.1920.1139@0.23.1920.1139" timestamp="1586437921004" />
   </component>
 </project>
