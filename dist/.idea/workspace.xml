@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6ab0c25-c73f-4a6f-9261-81f6a089b5bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../dist mobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dist mobile/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../start screen design/elements/Mobile/Page 2 phone and desktop mobile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../start screen design/elements/Mobile/Page 2 phone and desktop mobile.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,8 @@
       <workItem from="1586268303378" duration="207000" />
       <workItem from="1586268548841" duration="163000" />
       <workItem from="1586327744711" duration="1932000" />
-      <workItem from="1586334075087" duration="9022000" />
+      <workItem from="1586334075087" duration="9165000" />
+      <workItem from="1586433772548" duration="154000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1586262412174</created>
