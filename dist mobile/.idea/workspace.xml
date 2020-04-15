@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6ab0c25-c73f-4a6f-9261-81f6a089b5bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dist.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tile-wide.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +57,7 @@
       <workItem from="1586851596518" duration="82000" />
       <workItem from="1586851688162" duration="1561000" />
       <workItem from="1586864172344" duration="3056000" />
-      <workItem from="1586932591945" duration="1082000" />
+      <workItem from="1586932591945" duration="1606000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1586262412174</created>

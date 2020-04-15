@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6ab0c25-c73f-4a6f-9261-81f6a089b5bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../dist mobile/.idea/dist.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dist mobile/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dist mobile/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/img/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dist mobile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../dist mobile/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/tile-wide.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist mobile/tile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +57,7 @@
       <workItem from="1586433772548" duration="154000" />
       <workItem from="1586852435064" duration="1442000" />
       <workItem from="1586864171724" duration="775000" />
-      <workItem from="1586867827448" duration="5694000" />
+      <workItem from="1586867827448" duration="6217000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1586262412174</created>
