@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6ab0c25-c73f-4a6f-9261-81f6a089b5bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dist/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dist/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -57,7 +59,8 @@
       <workItem from="1586851596518" duration="82000" />
       <workItem from="1586851688162" duration="1561000" />
       <workItem from="1586864172344" duration="3056000" />
-      <workItem from="1586932591945" duration="1606000" />
+      <workItem from="1586932591945" duration="2191000" />
+      <workItem from="1587042822767" duration="337000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1586262412174</created>
